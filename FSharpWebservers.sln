@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpWebserverWSuave", "FSharpWebserverWSuave\FSharpWebserverWSuave.fsproj", "{BE8DF37C-654F-4BEE-B397-A5583449FFBA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{52522AC8-2119-4005-8720-DC8F37961A1A}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE8DF37C-654F-4BEE-B397-A5583449FFBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE8DF37C-654F-4BEE-B397-A5583449FFBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE8DF37C-654F-4BEE-B397-A5583449FFBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE8DF37C-654F-4BEE-B397-A5583449FFBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D0B4970-F6A4-4D5B-8B77-5327E9EB0C80}
+	EndGlobalSection
+EndGlobal
