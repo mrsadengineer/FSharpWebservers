@@ -6,6 +6,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="File0.fs" />
+    <Compile Include="File3Sync.fs" />
+    <Compile Include="File2Sync.fs" />
+    <Compile Include="File1.fs" />
+    <Compile Include="File2.fs" />
+    <Compile Include="File3.fs" />
+    <Compile Include="File4.fs" />
+    <Compile Include="File5.fs" />
+    <Compile Include="File6.fs" />
+    <Compile Include="File7.fs" />
+    <Compile Include="SuaveWebServers.fs" />
     <Compile Include="SuaveBasicWebServerImplementations.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
