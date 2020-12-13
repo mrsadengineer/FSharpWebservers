@@ -8,7 +8,32 @@ open System
 
 //[<EntryPoint>]
 let startSuaveWebserver argv =
+    //level 1 of 3 Simple
+    SuaveSimpleWebServers.runAsyncWCT argv
+
+
+
+
+    //Advance configuration
+    //FILE7: Custom Config; GET for static files and URLs with CORS 
+    //FILE6: Custom Config; GET static files and URLs no CORS (http operations beyound GET) 
+    //FILE5: Working GET Static Files from Routes
+    //FILE4: Advance Configuration: Config and Routing Apps (nohttp operations beyound GET) 
     
+    //simple configuration
+    //"FILE3: Custom Config, Multiple URL paths, no CORS (nohttp operations beyound GET) 
+    //"FILE2-Sync: Custom Config and Simple Hello World Text" //-sync
+    //"FILE2: Custom Config and Simple Hello World Text" //-async
+    //FILE1: One line deploy 
+    
+
+
+
+
+
+
+
+//###########################################
     //working
     //File1.runWebAndListeningServer argv
     
@@ -25,7 +50,7 @@ let startSuaveWebserver argv =
     //enclosed choose GET
 
 
-    //"FILE3: Custom Config, Multiple URL paths, no CORS (http operations beyound GET) 
+//"FILE3: Custom Config, Multiple URL paths, no CORS (http operations beyound GET) 
     //working
     //-simple custom config
     //-multiple paths for app/website
@@ -48,8 +73,7 @@ let startSuaveWebserver argv =
       //File3.runWebServerWCustomConfigCustomRoutes argv
 
     
-    
-    
+
     //FILE4: Advance Configuration: 
     //--------------location of homeFolder and other
     //working
@@ -62,7 +86,6 @@ let startSuaveWebserver argv =
     //File4.runWebServerWCustomConfigCustomRoutesBrowsweHome argv
 
 
-
     //FILE5: Working GET Static Files from Routes
     //working 
     //-config 
@@ -72,7 +95,6 @@ let startSuaveWebserver argv =
     //-async
     ////single http operation - get http operation
     //File5.runWebServerWCustomConfigStaticFilesFromBrowserHome argv
-
 
     //FILE6: Custom Config; GET static files and URLs
     //working 
@@ -99,18 +121,4 @@ let startSuaveWebserver argv =
     //-get
     //-post
     //CORS configuration is required for post and other routing/http operations
-    File7.runWebServerWCustomConfigStaticFilesFromBrowserHome argv
-
-   // 0 // return an integer exit code
-
-
-
-
-
-   //########################################prototyping
-    //allwebserverimplementations.runAsyncWCT argv
-    //allwebserverimplementations.runWebServer argv
-    //advanceexampwebserver.start() runAdvanceWebServer2
-    //allwebserverimplementations.runAdvanceWebServer argv
-    //allwebserverimplementations.runAdvanceWebServer2 argv
-    //##############################################
+    //File7.runWebServerWCustomConfigStaticFilesFromBrowserHome argv

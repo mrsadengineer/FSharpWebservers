@@ -1,7 +1,4 @@
-﻿module SuaveBasicWebServerImplementations
-
-open System
-
+﻿module SuaveAdvanceWebServers
 open Suave
 
 open Suave.Operators
@@ -10,48 +7,7 @@ open Suave.Filters
 
 open Suave.Successful
 
-open System.Threading 
-
-//1. one line implementation
-let startSimple =
-    startWebServer defaultConfig (Successful.OK "Hello World!")
-
-
-//2. simple custom config AND custom app route path for '/'
-let runWebServer argv = 
-    printfn "Hello World from F#!"
-   // Define the port where you want to serve. We'll hardcode this for now.
-    let port = 8080   
-    let cfg = // create an app config with the port
-    
-          { defaultConfig with
-              bindings = [ HttpBinding.createSimple HTTP "0.0.0.0" port]}
-    
-    let app =  // We'll define a single GET route at the / endpoint that returns "Hello World"
-          choose
-            [ GET >=> choose
-                [ path "/" >=> request (fun _ -> OK "Hello World!")] // printfn "Hello World from F#!" 
-            ]
-    
-    // Now we start the server
-    startWebServer cfg app
-
-//3. medium async example using constellation tokens
-let runAsyncWCT argv =
-     let cts = new CancellationTokenSource()
-     let conf = { defaultConfig with cancellationToken = cts.Token }
-     let listening, server = startWebServerAsync conf (Successful.OK "Hello World")
-       
-     Async.Start(server, cts.Token)
-     printfn "Make requests now"
-     Console.ReadKey true |> ignore
-       
-     cts.Cancel()
-
-
-
-
-     ///addvance configuation implementation
+///addvance configuation implementation
 //4. advance web server option, setting CORS and http headers 
 let runAdvanceWebServer argv = 
     let hello name = OK ("hello " + name)
@@ -65,11 +21,11 @@ let runAdvanceWebServer argv =
     
     let app =
         setServerHeader
-        >=> choose [
-        path "/" >=> hello "world"
-        path "/api" >=> NO_CONTENT
-        path "/api/users" >=> OK "users"
-      ]
+            >=> choose [
+            path "/" >=> hello "world"
+            path "/api" >=> NO_CONTENT
+            path "/api/users" >=> OK "users"
+        ]
 
     startWebServer defaultConfig app
     
@@ -100,7 +56,7 @@ let runAdvanceWebServer2 argv =
                             path "/static" >=> staticFilesRequest
                             // ...
                             ] )
-    
+         
             POST >=>
                 fun context ->
                     context |> (
