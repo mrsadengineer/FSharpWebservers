@@ -20,15 +20,3 @@ let execute cmd args =
     proc.WaitForExit()
     proc.StandardOutput.ReadToEnd()
 
-printfn "Sample Token and Configuration for Ancy!"
-let cts = new CancellationTokenSource()
-let logger = Targets.create Verbose [||]
-// Define the port where you want to serve. We'll hardcode this for now.
-let port = 8080   
-let cfg = // create an app config with the port
-    
-          { defaultConfig with
-              bindings = [ HttpBinding.createSimple HTTP "0.0.0.0" port]
-              bufferSize = 2048
-              maxOps     = 10000
-              logger     = logger}

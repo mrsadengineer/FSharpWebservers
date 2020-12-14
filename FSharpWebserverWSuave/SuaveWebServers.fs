@@ -1,34 +1,35 @@
 ﻿module SuaveWebServers
 
-// Learn more about F# at http://fsharp.org
-
 open System
 
-// We'll use argv later :)
-
-//[<EntryPoint>]
-let startSuaveWebserver argv =
+let startSuaveWebserver argv =   // We'll use argv later :)
     //level 1 of 3 Simple
-    SuaveSimpleWebServers.runAsyncWCT argv
+
+    //SuaveAdvanceWebServers.run03WebServerWFullCORSCapabileStaticSite argv
+    //SuaveAdvanceWebServers.run01WebServerWCustomConfigStaticFilesFromBrowserHome argv
+    SuaveAdvanceWebServers.run02WebServerWFullStaticSiteGet argv
 
 
-
-
+//###########################################
     //Advance configuration
-    //FILE7: Custom Config; GET for static files and URLs with CORS 
-    //FILE6: Custom Config; GET static files and URLs no CORS (http operations beyound GET) 
+    //Examples of Advance Configurations 
+    //Starting to use
+        //GET on Static files
+        //Seting up advance starting custom config
+        //browseFolder
+    //FILE7: Full Functional Website With CORS Custom Config; GET for static files and URLs with CORS; Headers Setting
+    //FILE6: Full Functional Website Custom Config; GET static files and URLs no CORS (http operations beyound GET) 
     //FILE5: Working GET Static Files from Routes
     //FILE4: Advance Configuration: Config and Routing Apps (nohttp operations beyound GET) 
     
     //simple configuration
-    //"FILE3: Custom Config, Multiple URL paths, no CORS (nohttp operations beyound GET) 
-    //"FILE2-Sync: Custom Config and Simple Hello World Text" //-sync
-    //"FILE2: Custom Config and Simple Hello World Text" //-async
-    //FILE1: One line deploy 
+    //Custom Config, Multiple URL paths, no CORS (nohttp operations beyound GET) 
+    //Custom Config and Simple Hello World Text" //-async
+    //One line deploy 
     
 
 
-
+// Learn more about F# at http://fsharp.org
 
 
 

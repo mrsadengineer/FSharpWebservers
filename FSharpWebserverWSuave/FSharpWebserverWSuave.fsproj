@@ -6,17 +6,43 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="Websites\CORSWebsite\Torchwork.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Websites\StaticWebsite\css\site.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Websites\StaticWebsite\Torchwork.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Websites\StaticWebsite\contact.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Websites\StaticWebsite\about.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Websites\StaticWebsite\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Websites\website\test.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Websites\website\Torchwork.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Websites\website\index.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Compile Include="SuaveSimpleWebServersSync.fs" />
     <Compile Include="SuaveSimpleWebServers.fs" />
     <Compile Include="SuaveAdvanceWebServers.fs" />
     <Compile Include="File0.fs" />
-    <Compile Include="File4.fs" />
-    <Compile Include="File5.fs" />
-    <Compile Include="File6.fs" />
-    <Compile Include="File7.fs" />
     <Compile Include="SuaveWebServers.fs" />
-    <Compile Include="SuaveBasicWebServerImplementations.fs" />
     <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Websites\CORSWebsite\css\" />
   </ItemGroup>
 
   <ItemGroup>

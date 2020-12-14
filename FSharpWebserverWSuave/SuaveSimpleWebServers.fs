@@ -1,9 +1,9 @@
 ﻿module SuaveSimpleWebServers
 
 open Suave
+open Suave.Operators
 open Suave.Filters
 open Suave.Successful
-open Suave.Operators
 open System.Threading
 open System
 open Suave.Logging
