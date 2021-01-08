@@ -9,6 +9,33 @@ open System.Threading
 open Suave.Logging
 
 
+// We'll use argv later :)
+   //level 1 of 3 Simple
+
+
+
+
+//###########################################
+   //Advance configuration
+   //Examples of Advance Configurations 
+   //Starting to use
+       //GET on Static files
+       //Seting up advance starting custom config
+       //browseFolder
+   //FILE7: Full Functional Website With CORS Custom Config; GET for static files and URLs with CORS; Headers Setting
+   //FILE6: Full Functional Website Custom Config; GET static files and URLs no CORS (http operations beyound GET) 
+   //FILE5: Working GET Static Files from Routes
+   //FILE4: Advance Configuration: Config and Routing Apps (nohttp operations beyound GET) 
+   
+   //simple configuration
+   //Custom Config, Multiple URL paths, no CORS (nohttp operations beyound GET) 
+   //Custom Config and Simple Hello World Text" //-async
+   //One line deploy 
+   
+
+
+// Learn more about F# at http://fsharp.org
+
 
 
 
@@ -145,8 +172,6 @@ let run01WebServerWCustomConfigStaticFilesFromBrowserHome argv =
 //css
 let run02WebServerWFullStaticSiteGet argv = 
     printfn "Hello Config HomeFolder and custom routes !"
-
-    
     let websitepath1 = "./Websites/StaticWebsite"
     let cts = new CancellationTokenSource()
     let logger = Targets.create Verbose [||]

@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Version>0.2.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -37,7 +38,6 @@
     <Compile Include="SuaveSimpleWebServers.fs" />
     <Compile Include="SuaveAdvanceWebServers.fs" />
     <Compile Include="File0.fs" />
-    <Compile Include="SuaveWebServers.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
